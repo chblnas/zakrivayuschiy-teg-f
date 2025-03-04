@@ -280,11 +280,8 @@ main {
   }
 }
 
-@supports (
-  (-webkit-text-stroke: 1px var(--text-stroke-color)) or
-    (text-stroke: 1px var(--text-stroke-color))
-) {
-
+@supports ((-webkit-text-stroke: 1px var(--text-stroke-color)) or
+    (text-stroke: 1px var(--text-stroke-color))) {
   .card__img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-stroke-color);
