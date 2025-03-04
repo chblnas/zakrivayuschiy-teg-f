@@ -85,7 +85,7 @@ main {
   inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
 }
 
-.card__img img {
+.card__img {
   display: block;
   object-fit: cover;
   object-position: center;
