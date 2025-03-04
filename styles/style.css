@@ -232,6 +232,7 @@ main {
   border: 2px solid var(--accent-color);
   padding: 30px clamp(2.625rem, 2.8891rem + -1.1268vw, 1.875rem);
   inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
+  max-block-size: 195px;
 }
 
 .dialog::backdrop {
@@ -245,6 +246,8 @@ main {
 
 .dialog__content {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -254,6 +257,7 @@ main {
 }
 
 .dialog__text {
+  text-transform: uppercase;
   font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   line-height: 150%;
