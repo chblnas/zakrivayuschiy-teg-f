@@ -1,1 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --main-font-family: "Inter-Variable";
+  --accent-font-family: "PressStart2P";
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+  --content-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --text-stroke-color: #fff;
+  --accent-color: #000;
+  --floppy-size: 21px;
+  --bg-color: #fff;
+  --heart-contour-color: #000;
+  --heart-main-color: #f00;
+}
+
+@media (width <= 375px) {
+
+  :root {
+    --content-size: 100%;
+    --floppy-size: 28px;
+  }
+
+  .save-button {
+    flex-direction: column;
+  }
+
+  .save-button svg {
+    width: 28px;
+    height: 28px;
+  }
+}
