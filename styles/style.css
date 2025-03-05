@@ -228,8 +228,6 @@ main {
 }
 
 .dialog {
-  position: fixed;
-  inset: 0;
   border: 2px solid var(--accent-color, #000);
   padding: 30px;
   max-inline-size: 353px;
